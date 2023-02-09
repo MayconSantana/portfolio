@@ -27,12 +27,16 @@ body{
     text-decoration: none;
     outline: none;
     z-index: 1;
+    width: 50px;
+    height: 50px;
+    background: #0e2c7e;
+    border-radius: 50%;
 }
 
-#btn-home > p{
-    padding: .5rem 1rem;
-    border-radius: 5px;
-    background: var(--input-color);
+#btn-home > img{
+    position: fixed;
+    right: 49px;
+    bottom: 50px;
 }
 
 #btn-home.none{
@@ -130,8 +134,8 @@ header{
     align-items: center;
     gap: 4rem;
 
-    background: var(--secondary-color);
-    padding: 2rem;
+    background: linear-gradient(90deg, var(--main-color), #000000, var(--main-color));
+    padding: 6rem;
 }
 
 .sobre-text{
@@ -169,6 +173,7 @@ header{
 
 .sobre-img > figure > img{
     width: 15rem;
+    border-radius: 50%;
     
     animation: iluminar .7s infinite;
 }

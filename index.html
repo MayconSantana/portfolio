@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/programacaoicon.png" type="image/x-icon">
     <title>Portfólio - Maycon Santana</title>
 </head>
 <body>
@@ -13,6 +14,8 @@
     </a>
 
     <header id="header">
+        <span class="iconp"><img src="assets/img/codigo.png" alt="code"></span>
+
         <nav class="list-nav">
             <a href="index.htm">Home</a>
             <a href="#sobre">Sobre mim</a>
@@ -20,6 +23,8 @@
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </nav>
+
+        <span class="iconp"><img src="assets/img/codigo.png" alt="code"></span>
     </header>
 
     <main>
@@ -36,13 +41,13 @@
             </div>
         </section>
 
-        <section class="sobre" id="sobre">
+        <section class="sobre" id="sobre" data-show>
             <div class="sobre-text">
                 <h2>Sobre mim</h2>
                 <span class="line"></span>
                 <span class="line"></span>
 
-                <p>Eu me chamo Maycon, tenho 17 anos e sou apaixonado por tecnologia. Acabo de me formar na <span>ETEC Prof.ª Nair Luccas Ribeiro</span> no Ensino Médio e também em um curso de <span>Técnico em Informática</span>. 
+                <p>Eu me chamo Maycon, tenho 18 anos e sou apaixonado por tecnologia. Acabo de me formar na <span>ETEC Prof.ª Nair Luccas Ribeiro</span> no Ensino Médio e também em um curso de <span>Técnico em Informática</span>. 
                 Gosto muito de programar, venho estudando diversas tecnologias, tanto em Front-end, quanto em Back-end, tudo isso em cursos por fora, tutoriais na internet e tudo mais! E assim, busco minha primeira oportuniade de emprego na área.</p>
             </div>
 
@@ -53,7 +58,7 @@
             </div>
         </section>
 
-        <section class="tecnologias" id="tecnologias">
+        <section class="tecnologias" id="tecnologias" data-show>
             <h2>Tecnologias</h2>
 
             <div class="boxs-tecnologias">
@@ -99,20 +104,24 @@
             </div>
         </section>
 
-        <section class="projetos" id="projetos">
+        <section class="projetos" id="projetos" data-show>
             <h2>Meus Projetos</h2>
 
             <div class="box-projeto">
                 <div class="nome-projeto">
-                    NOME PROJETO
+                    Calculadora de IMC
                 </div>
 
                 <div class="desc-projeto">
-                    <p>DESCRIÇÃO DO PROJETO</p>
+                    <p>É uma aplicação simples usando HTML, CSS, JavaScript que recebe os dados referentes a altura e peso do usuário e realiza o cálculo, assim retornando o seu respectivo IMC e sua situação.</p>
                 </div>
 
                 <div class="link-projeto">
-                    <p>LINK DO PROJETO</p>
+                    <a href="https://peaceful-torte-ea5715.netlify.app">LINK DO PROJETO</a>
+                </div>
+
+                <div class="link-projeto">
+                    <a href="https://github.com/MayconSantana/imc-js">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
 
@@ -126,7 +135,11 @@
                 </div>
 
                 <div class="link-projeto">
-                    <p>LINK DO PROJETO</p>
+                    <a href="">LINK DO PROJETO</a>
+                </div>
+
+                <div class="link-projeto">
+                    <a href="">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
 
@@ -140,7 +153,11 @@
                 </div>
 
                 <div class="link-projeto">
-                    <p>LINK DO PROJETO</p>
+                    <a href="">LINK DO PROJETO</a>
+                </div>
+
+                <div class="link-projeto">
+                    <a href="">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
         </section>
@@ -187,6 +204,7 @@
     </footer>
 
     <script src="assets/js/script.js" defer></script>
+    <script src="lodash.js"></script>
     <script src="https://kit.fontawesome.com/ed4f635e19.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 :root{
     --main-color: #0f122c;
     --secondary-color: #161A31;
-    --input-color: #0e2c7e;
+    --input-color: #345ac2;
 }
 
 body{
@@ -29,7 +29,7 @@ body{
     z-index: 1;
     width: 50px;
     height: 50px;
-    background: #0e2c7e;
+    background: linear-gradient(to right, #0e2c7e, #081947, #0e2c7e);
     border-radius: 50%;
 }
 
@@ -46,8 +46,12 @@ body{
 /* Header - Cabeçalho da Página */
 
 header{
-    padding: 2rem 1rem;
-    background: #161A31;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(90deg, var(--main-color), #000000, var(--main-color));
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .list-nav{
@@ -65,6 +69,11 @@ header{
 .list-nav > a:hover{
     border-bottom: 1px solid #eee;
     opacity: 1;
+}
+
+.iconp > img {
+    width: 30px;
+    margin: 0 5rem;
 }
 
 /* Home */
@@ -247,16 +256,26 @@ header{
 /* Projetos */
 
 .projetos{
-    background: var(--secondary-color);
+    background: linear-gradient(90deg, var(--main-color), #000000, var(--main-color));
     padding: 2rem 0;
 }
 
 .box-projeto{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    gap: 5rem;
 
-    margin-bottom: 2rem ;
+    margin: 0 auto 2rem auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.box-projeto > .nome-projeto{
+    font-weight: bold;
+    font-size: 22px;
+
+    color: var(--input-color);
 }
 
 /* Contato */
@@ -366,8 +385,19 @@ header{
 /* Footer */
 
 footer{
-    background: var(--secondary-color);
+    background: linear-gradient(90deg, var(--secondary-color), #000000, var(--secondary-color));
     padding: 1rem 0;
     display: grid;
     place-items: center;
+}
+
+/* Efeito Opacity nas Sections */
+
+[data-show] {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1 !important;
+    transition: .3s all;
 }

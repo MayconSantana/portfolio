@@ -9,7 +9,7 @@
 }
 
 :root{
-    --main-color: #0f122c;
+    --main-color: #0b0d22;
     --secondary-color: #161A31;
     --input-color: #345ac2;
 }
@@ -264,11 +264,17 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
 
-    margin: 0 auto 2rem auto;
-    max-width: 80%;
+    gap: 5rem;
+    margin: 0 auto;
+    max-width: 80vw;
     text-align: center;
+    border-bottom: 2px solid #fff;
+    padding: 2rem;
+}
+
+.box-projeto:last-child{
+    border: none;
 }
 
 .box-projeto > .nome-projeto{
@@ -276,6 +282,16 @@ header{
     font-size: 22px;
 
     color: var(--input-color);
+
+    width: 20%;
+}
+
+.box-projeto > .desc-projeto{
+    width: 70%;
+}
+
+.box-projeto > .link-projeto{
+    width: 10%;
 }
 
 /* Contato */

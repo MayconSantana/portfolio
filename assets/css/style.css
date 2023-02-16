@@ -57,6 +57,8 @@ header{
 .list-nav{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 6rem;
 }
 
@@ -88,7 +90,7 @@ header{
 
 .home-img{
     position: absolute;
-    left: 15rem;
+    left: 15%;
 
     animation: flutuar 3s infinite;
 }
@@ -101,7 +103,7 @@ header{
     max-width: 400px;
 
     position: absolute;
-    right: 15rem;
+    right: 15%;
     top: 6rem;
 }
 
@@ -154,6 +156,10 @@ header{
 .sobre-text > h2{
     font-size: 44px;
     text-align: center;
+}
+
+.h2mobile {
+    display: none;
 }
 
 .line{
@@ -291,7 +297,8 @@ header{
 }
 
 .box-projeto > .link-projeto{
-    width: 10%;
+    display: flex;
+    gap: 2rem;
 }
 
 /* Contato */
@@ -303,7 +310,7 @@ header{
 .box-contato{
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .input-group{
@@ -362,6 +369,23 @@ header{
     font-size: 20px;
 }
 
+
+/* JS Valid Input EMAIL */
+.animeInputLabel {
+    transform: translateY(-30px);
+    transition: .5s;
+    opacity: 1 !important;
+    font-size: 20px;
+}
+
+/* JS Valid TEXTAREA */
+.animeInputLabelTextarea {
+    color: #fff;
+    transform: translate3d(-10px, -40px, 0);
+    transition: .5s;
+    opacity: 1;
+    font-size: 20px;
+}
 
 .input-group > textarea:focus ~ label,
 .input-group > textarea:valid ~ label{

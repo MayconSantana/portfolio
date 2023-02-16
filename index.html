@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="icon" href="assets/img/programacaoicon.png" type="image/x-icon">
     <title>Portfólio - Maycon Santana</title>
 </head>
@@ -16,6 +17,22 @@
 
     <header id="header">
         <span class="iconp"><img src="assets/img/codigo.png" alt="code"></span>
+
+        <div class="hamburguer">
+            <div class="spans" id="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="list-mobile hide">
+                <a href="index.html">Home</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
 
         <nav class="list-nav">
             <a href="index.htm">Home</a>
@@ -57,6 +74,8 @@
                     <img src="assets/img/maycon.jpeg" alt="Maycon">
                 </figure>
             </div>
+
+            <h2 class="h2mobile">Sobre mim</h2>
         </section>
 
         <section class="tecnologias" id="tecnologias" data-show>
@@ -119,9 +138,7 @@
 
                 <div class="link-projeto">
                     <a href="https://imc-app018.netlify.app" target="_blank">LINK DO PROJETO</a>
-                </div>
-
-                <div class="link-projeto">
+                
                     <a href="https://github.com/MayconSantana/imc-js" target="_blank">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
@@ -137,9 +154,7 @@
 
                 <div class="link-projeto">
                     <a href="https://clock-js018.netlify.app" target="_blank">LINK DO PROJETO</a>
-                </div>
-
-                <div class="link-projeto">
+                
                     <a href="https://github.com/MayconSantana/clockJS" target="_blank">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
@@ -155,9 +170,7 @@
 
                 <div class="link-projeto">
                     <a href="https://qr-code-component018.netlify.app" target="_blank">LINK DO PROJETO</a>
-                </div>
-
-                <div class="link-projeto">
+                
                     <a href="https://github.com/MayconSantana/qr-code-component" target="_blank">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
@@ -173,9 +186,7 @@
 
                 <div class="link-projeto">
                     <a href="https://news-homepage018.netlify.app" target="_blank">LINK DO PROJETO</a>
-                </div>
-
-                <div class="link-projeto">
+                
                     <a href="https://github.com/MayconSantana/news-homepage" target="_blank">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
@@ -191,9 +202,7 @@
 
                 <div class="link-projeto">
                     <a href="https://consult-cep018.netlify.app" target="_blank">LINK DO PROJETO</a>
-                </div>
-
-                <div class="link-projeto">
+                
                     <a href="https://github.com/MayconSantana/consult-cep" target="_blank">LINK DO REPOSITÓRIO</a>
                 </div>
             </div>
@@ -203,33 +212,33 @@
             <h2>Entre em contato</h2>
 
             <div class="box-contato">
-                <div class="form-contato">
+                <form action="https://api.staticforms.xyz/submit" method="POST" class="form-contato">
+                    <input type="hidden" name="accessKey" value="67d3e2f9-6b80-43d2-8a86-4c7261476a2e">
+                    <input type="hidden" name="redirectTo" value="https://portfolio-mayconsantana.netlify.app">
+
                     <div class="input-group">
-                        <input type="text" id="nome" name="nome" autocomplete="off" required><label for="nome">Nome</label>
+                        <input type="text" id="nome" name="name" autocomplete="off" required><label for="nome">Nome</label>
                     </div>
                     
                     <div class="input-group">
-                        <input type="text" id="email" name="email" autocomplete="off" required><label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="off" required><label for="email" id="labelEmail">Email</label>
                     </div>
 
                     <div class="input-group">
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" autocomplete="off" required></textarea><label for="mensagem">Mensagem</label>
+                        <textarea name="message" id="mensagem" cols="30" rows="5" autocomplete="off" required minlength="5"></textarea><label for="mensagem" id="labelTextarea">Mensagem</label>
                     </div>
 
-                    <button>Enviar</button>
-                </div>
+                    <button id="btnForm">Enviar</button>
+
+                </form>
 
                 <div class="social-media">
-                    <a href="mailto:mayconss05@hotmail.com" target="_blank">
-                        <img src="assets/img/email.png" alt="EMAIL">
-                    </a>
-
                     <a href="https://www.linkedin.com/in/maycon-santana-957868183/" target="_blank">
                         <img src="assets/img/linkedin.png" alt="LINKEDIN">
                     </a>
 
                     <a href="https://github.com/MayconSantana" target="_blank">
-                        <img src="assets/img/github.png" alt="github">
+                        <img src="assets/img/github-white.png" alt="github">
                     </a>
                 </div>
             </div>
@@ -241,7 +250,7 @@
     </footer>
 
     <script src="assets/js/script.js" defer></script>
-    <script src="lodash.js"></script>
+    <script src="assets/js/validInput.js" defer></script>
     <script src="https://kit.fontawesome.com/ed4f635e19.js" crossorigin="anonymous"></script>
 </body>
 </html>

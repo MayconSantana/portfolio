@@ -1,0 +1,195 @@
+.hide {
+    display: none !important;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburguer > .spans {
+    cursor: pointer;
+}
+
+.hamburguer > .spans > span {
+    display: block;
+    margin: 5px 0;
+    width: 2rem;
+    height: 3px;
+    background: #eee;
+}
+
+.list-mobile {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+.list-mobile > a{
+    text-decoration: none;
+    color: #ccc;
+    opacity: .8;
+    transition: all .3s ease-in-out;
+}
+
+.list-mobile > a:hover{
+    border-bottom: 1px solid #eee;
+    transform: scale(1.1);
+    border: none;
+    opacity: 1;
+}
+
+
+@media (max-width: 1250px) {
+    .home {
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .iconp {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+@media (max-width: 1035px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home-img,
+    .home-text {
+        position: static;
+    }
+
+    .boxs-tecnologias {
+        flex: column nowrap;
+    }
+
+    .box-tec {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .box-projeto {
+        flex-direction: column;
+    }
+
+    .box-projeto > .nome-projeto {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .box-projeto > .desc-projeto{
+        width: 100%;
+    }
+
+    .box-projeto > .link-projeto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .list-nav {
+        display: none;
+    }
+
+    .hamburguer {
+        display: flex;
+    }
+
+    .box-tec {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 750px) {
+   .sobre {
+    flex-direction: column-reverse;
+   } 
+
+   .sobre-text > h2 {
+    display: none;
+   }
+
+   .h2mobile {
+    display: flex;
+    font-size: 44px;
+    text-align: center;
+   }
+
+   .sobre-text > p {
+    margin-top: 1rem;
+   }
+
+   .box-contato {
+    flex-direction: column;
+   }
+
+   .social-media {
+    flex-direction: row;
+   }
+
+   .input-group > textarea {
+    width: 100%;
+   }
+}
+
+@media (max-width: 640px) {
+    .tecnologias {
+        padding: 2rem;
+    }
+
+    .box-tec {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sobre {
+        padding: 3rem;
+    }
+
+    .home {
+        padding: 2rem;
+    }
+
+    .input-group > input,
+    .input-group > textarea {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .home-img > img {
+        width: 15rem;
+    }
+
+    .home-text > h1{
+        font-size: 1.3rem;
+    }
+
+    .contato {
+        padding: 1rem;
+    }
+}

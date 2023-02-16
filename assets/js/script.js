@@ -4,6 +4,12 @@ const btnhome = document.getElementById("btn-home");
 const dataShowElements = document.querySelectorAll("[data-show]");
 const body = document.querySelector('body');
 
+const hamburguerMenu = document.querySelector('#hamburguer');
+const listMobile = document.querySelector('nav.list-mobile');
+const listNav = document.querySelector('nav.list-nav');
+
+const btnForm = document.getElementById('btnForm');
+
 // Funções
 const typeWriter = (element) => {
     let texto = element.innerHTML.split("");
@@ -39,6 +45,11 @@ const sectionAnimateOpacity = () => {
     })
 }
 
+const toggleMenus = () => {
+    listMobile.classList.toggle('hide');
+    listNav.classList.toggle('hide');
+}
+
 // Chamada de Funções
 typeWriter(hometxt)
 
@@ -49,3 +60,5 @@ if(dataShowElements.length) {
 window.addEventListener('scroll', sectionAnimateOpacity)
 
 animateScroll(); sectionAnimateOpacity();
+
+hamburguerMenu.addEventListener("click", toggleMenus)

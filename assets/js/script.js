@@ -28,6 +28,12 @@ const hometxt = document.querySelector(".home-text h1"),
   },
   toggleMenus = () => {
     listMobile.classList.toggle("hide"), listNav.classList.toggle("hide");
+
+    if (hamburguerMenu.classList.contains("x")) {
+      hamburguerMenu.classList.remove("x");
+    } else {
+      hamburguerMenu.classList.add("x");
+    }
   };
 typeWriter(hometxt),
   dataShowElements.length && window.addEventListener("scroll", animateScroll),

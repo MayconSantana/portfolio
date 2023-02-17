@@ -17,12 +17,27 @@ h2 {
   cursor: pointer;
 }
 
+.hamburguer > .spans.x > span:first-child {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 8;
+}
+
+.hamburguer > .spans.x > span:nth-child(2) {
+  display: none;
+}
+
+.hamburguer > .spans.x > span:last-child {
+  transform: rotate(-45deg);
+}
+
 .hamburguer > .spans > span {
   display: block;
   margin: 5px 0;
   width: 2rem;
   height: 3px;
   background: #eee;
+  transition: 0.5s all;
 }
 
 .list-mobile {

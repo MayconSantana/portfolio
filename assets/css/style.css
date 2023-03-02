@@ -8,6 +8,10 @@
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #0b0d22;
   --secondary-color: #161a31;
@@ -214,47 +218,47 @@ header {
   margin-bottom: 3rem;
 }
 
-.boxs-tecnologias {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .box-tec {
   display: flex;
   align-items: center;
-  border: 1px solid #fff;
+  justify-content: center;
+  gap: 2rem;
   margin: 0 2rem 2rem 0;
-  width: calc((100% / 2) - 1rem);
-  opacity: 0.2;
+  width: 100%;
 }
 
-.box-tec:hover {
-  opacity: 1;
-  transition: all 0.4s;
-}
 
 .box-tec:nth-child(2),
 .box-tec:nth-child(4) {
   margin: 0 0 2rem;
 }
 
-.tec-img,
-.tec-text {
-  padding: 2rem;
+.tec-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 40%;
+  height: 10rem;
+  opacity: .3;
+  transition: .3s all;
+}
+
+.tec-img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.tec-img:nth-of-type(4) > img {
+  margin-top: 30px;
 }
 
 .tec-img > img {
   width: 6rem;
 }
 
-.tec-text {
-  text-align: justify;
-}
-
-.tec-text > p {
-  font-weight: 200;
-  cursor: default;
-}
 
 .projetos {
   background: linear-gradient(

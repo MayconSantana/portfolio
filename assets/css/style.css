@@ -222,6 +222,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   margin: 0 2rem 2rem 0;
   width: 100%;
@@ -239,7 +240,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  width: 40%;
+  width: calc((100%/5) - 40px);
   height: 10rem;
   opacity: .3;
   transition: .3s all;
@@ -251,7 +252,7 @@ header {
   cursor: pointer;
 }
 
-.tec-img:nth-of-type(4) > img {
+.tec-img:nth-of-type(5) > img {
   margin-top: 30px;
 }
 

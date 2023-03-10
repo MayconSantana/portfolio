@@ -5,6 +5,7 @@ const hometxt = document.querySelector(".home-text h1"),
   hamburguerMenu = document.querySelector("#hamburguer"),
   listMobile = document.querySelector("nav.list-mobile"),
   listNav = document.querySelector("nav.list-nav"),
+  formContact = document.querySelector('#form-contact'),
   btnForm = document.getElementById("btnForm"),
   typeWriter = (o) => {
     let e = o.innerHTML.split("");
@@ -41,7 +42,3 @@ typeWriter(hometxt),
   animateScroll(),
   sectionAnimateOpacity(),
   hamburguerMenu.addEventListener("click", toggleMenus);
-
-btnForm.addEventListener("click", () => {
-  alert("Mensagem Enviada com Sucesso!");
-});
